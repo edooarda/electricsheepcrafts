@@ -1,0 +1,157 @@
+body{
+    background-color:#eac65b;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+/* Menu de navegação */
+
+.cabecalho nav ul{
+    text-align: center; 
+}
+.cabecalho nav li{
+    display: inline-block;
+    list-style: none; 
+    margin-right: 50px; 
+}
+.cabecalho nav a{
+    color: #eac65b;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.cabecalho nav a:hover{
+    padding: 4px;
+    background-color: white;
+    border-radius: 10px;
+}    
+
+.menu{
+    background-color: black;
+    margin: 0;
+    padding-bottom: 10px;
+    border: 1px solid transparent; /* faz desaparecer a borda do topo da página */
+}
+
+/* Logo do cabeçalho */
+
+.logo img{
+    width: 200px;
+    display: block;
+    margin-top: 10px;
+
+    
+}
+/* Entra o Banner */ 
+
+h1{
+    font-family: 'Homemade Apple', cursive; /*font externa implementada no css*/
+    margin-left: 40px;
+    font-size: 60px;
+    color: white;
+}
+
+.conteudo-cabecalho{ 
+    text-align: center; 
+    color: white; 
+    margin: 100px;
+   
+}
+.conteudo-cabecalho h1{
+    text-shadow: 2px 2px 1px #957DAD;
+}
+.conteudo-cabecalho p{
+    background-color: #957DAD;
+    font-weight: bolder;
+    
+}
+/* Seção 1 de cartões das técnicas */
+main{
+    margin: 0;
+}
+
+.tecnica{
+    background-color: #E0BBE4; /* preciso definir altura e largura para que a cor apareça */
+    width: 100%;
+    height: 700px;
+    margin: 0; /* deveria ter deixado a cor em formato total */
+}
+.tecnica h1{
+    padding-top: 50px;
+}
+.card{
+    width: 25%;
+    float: left; 
+    padding: auto;
+    box-sizing: border-box;
+    position: relative; /* ele que tá colocando a posição pai*/
+    }
+
+.card img{
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 20px;
+}
+.t1, .c2{
+    margin-right: 3%;
+}
+
+.t1{
+    margin-left: 120px;
+}
+.sobreposicao{
+    position: absolute; /* para ficar em relação a posição do anterior */
+    top: 0; /* sem os parametros em 0 não fica em cima da imagem*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:#957DAD;
+    opacity: 0; /*opacidade da cor */
+    transition: .5s ease;   /*  tempo de transição */
+    text-align: center;
+    border-radius: 20px; /* precisa colocar as bordas na sobreposição também */
+
+}
+.sobreposicao p{ /* formatando o texto da sobreposição*/
+    font-size: medium;
+    font-weight: bolder;
+    color: white;
+    margin-top: 120px;
+    
+}
+.card:hover  .sobreposicao{ /* quando passa o mouse fica aparece a opacidade total*/
+    opacity: 1;
+}
+
+
+/* Parte de baixo da página */
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 50px;
+    width: 100%;  
+    
+}
+
+.contatosrodape{
+    font-weight: lighter;
+    font-size: medium;
+    font-family: 'Homemade Apple', cursive;
+    text-transform: lowercase;
+}
+
+.copy{
+    font-size: small;
+    
+}
+
+footer a{
+    text-decoration: none;
+}
